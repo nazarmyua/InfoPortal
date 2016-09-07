@@ -1,0 +1,443 @@
+﻿@import "_CSSReset";
+@import "_font";
+@import "_const";
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+input {
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    @include regular;
+
+    header {
+        color: white;
+
+        .instrument {
+            background-color: $darkBlue;
+            border-bottom: 1px solid $blue;
+            height: 48px;
+            @include regular;
+
+            li {
+                line-height: 47px;
+                vertical-align: middle;
+                font-size: 14px;
+            }
+
+            a {
+                text-align: left;
+                color: white;
+                padding: 0;
+            }
+
+            a:hover, a:focus {
+                background-color: transparent;
+                color: $VlightBlue;
+                text-decoration: none;
+            }
+
+
+            a.region {
+                background-image: url('../img/location_icon.png');
+                background-repeat: no-repeat;
+                background-position-x: left;
+                background-position-y: center;
+                padding-left: 30px;
+            }
+
+            a.region:hover, a.region:focus {
+                background-image: url('../img/location_icon_active.png');
+            }
+
+            .search-input {
+                height: 26px;
+                background-color: $blue;
+                border: none;
+                padding: 2px 5px;
+                font-size: 14px;
+                padding-right: 23px;
+                /*max-width:150px;*/
+            }
+
+            .search {
+                background-image: url('../img/search_icon.png');
+                background-repeat: no-repeat;
+                height: 26px;
+                width: 18px;
+                background-color: transparent;
+                background-position: center;
+                border: none;
+                white-space: nowrap;
+                margin-left: -25px;
+            }
+
+            .search:focus, .search:hover {
+                background-image: url('../img/search_icon_active.png');
+            }
+
+            a.online {
+                float: right;
+                background-image: url('../img/online_icon.png');
+                background-repeat: no-repeat;
+                background-position-x: left;
+                background-position-y: center;
+                padding-left: 50px;
+            }
+
+            a.online:hover, a.online:focus {
+                background-image: url('../img/online_icon_active.png');
+            }
+
+            .log-in {
+                background-image: url('../img/autorizate_icon.png');
+                background-repeat: no-repeat;
+                background-position-x: left;
+                background-position-y: center;
+                width: 36px;
+                height: 46px;
+                float: right;
+            }
+
+            .log-in:hover {
+                background-image: url('../img/autorizate_icon_active.png');
+            }
+
+            .autorize {
+                float: right;
+                padding-left: 10px;
+                margin-top: 3px;
+
+                li {
+                    line-height: 20px;
+                }
+
+                a {
+                    max-height: 20px;
+                    line-height: 20px;
+                }
+            }
+
+
+
+            .lang {
+                text-align: right;
+            }
+
+            .lang > a {
+                display: inline-block;
+            }
+
+            .lang > a:hover, .lang > a:focus, .lang > a:active, .nav .open > a {
+                background-color: transparent;
+            }
+
+            .lang .dropdown-menu {
+                background-color: $darkBlue;
+            }
+
+            .lang .dropdown-menu a {
+                padding-left: 10px;
+            }
+        }
+
+        .info {
+            border-top: 1px solid $VlightBlue;
+            background-color: $blue;
+
+            .row {
+                padding-bottom: 15px;
+                padding-top: 5px;
+                /*display:flex;
+                align-items: stretch;*/
+            }
+
+            .logo {
+                margin-top: 5px;
+
+                .img-container {
+                    float: left;
+                    padding-right: 18px;
+                }
+
+                span {
+                    display: block;
+                }
+
+                span.once {
+                    font-size: 14px;
+                }
+
+                span.portal {
+                    text-transform: uppercase;
+                    font-size: 28px;
+                }
+
+                span.portal-logo {
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    line-height: 44px;
+                }
+            }
+
+            .in-region {
+                span {
+                    display: flex;
+                    justify-content: center; /* align horizontal */
+                    align-items: center;
+                    @include thin;
+                    font-size: 30px;
+                }
+            }
+
+            .info-data {
+                padding: 0;
+                position: relative;
+
+                span {
+                    width: 50%;
+                    display: block;
+                    float: left;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center; /* align horizontal */
+                    align-items: center;
+                }
+
+                span:not(.count) {
+                    @include light;
+                    line-height: 18px;
+                }
+
+                .count {
+                    @include thin;
+                    font-size: 48px;
+                    text-align: center;
+                }
+            }
+
+            .dop-info {
+                .dropdown {
+                    text-align: right;
+                }
+
+                > div > button {
+                    background-color: transparent;
+                    border: none;
+                }
+
+                > div > button span {
+                    color: white;
+                    font-size: 24px;
+                    margin-top: 15px;
+                }
+
+                > div > a span:hover {
+                    color: $darkBlue;
+                }
+
+                ul {
+                    background-color: $darkBlue;
+                }
+
+                li a {
+                    color: white;
+                }
+
+                li a:hover {
+                    background-color: $blue;
+                }
+            }
+
+            .social {
+                margin-top: 65px;
+                margin-right: 50px;
+            }
+
+            .social a {
+                float: right;
+                display: block;
+                margin-bottom: 7px;
+            }
+
+            .social img {
+                height: 27px;
+                width: 27px;
+            }
+        }
+
+        .menu {
+            background-color: $lightBlue;
+
+            .main-menu > li > a {
+                color: white;
+                text-transform: uppercase;
+                text-align: left;
+                font-size: 16px;
+                line-height: 24px;
+                @include regular;
+            }
+
+            .main-menu > li > a:hover, .main-menu > li > a:active, .main-menu > li > a:focus, .nav .open > a {
+                background-color: transparent;
+                color: $VlightBlue;
+            }
+
+            ul ul {
+                background-color: $blue;
+            }
+
+            ul ul li a {
+                color: white;
+                font-size: 14px;
+            }
+
+            ul ul li a:hover {
+                background-color: $lightBlue;
+                color: white;
+            }
+        }
+    }
+
+    .section-wrapper {
+        background-color: $grey;
+    }
+
+    footer {
+        .partners {
+            padding-bottom: 40px;
+            padding-top: 75px;
+            background-color: $darkBlue;
+
+            span {
+                color: white;
+                font-size: 30px;
+                text-transform: uppercase;
+                padding-left: 10px;
+            }
+
+            ul {
+                padding-top: 30px;
+            }
+
+            li > a:hover, li > a:active, li > a:focus, .nav .open > a {
+                background-color: transparent;
+            }
+        }
+
+        .info {
+            background-image: url('../img/footer_back.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 35px;
+            padding-bottom: 10px;
+
+            .logo {
+                margin-top: 5px;
+
+                .img-container {
+                    float: left;
+                    padding-right: 18px;
+                }
+
+                span {
+                    display: block;
+                }
+
+                span.once {
+                    font-size: 14px;
+                }
+
+                span.portal {
+                    text-transform: uppercase;
+                    font-size: 28px;
+                }
+
+                span.portal-logo {
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    line-height: 44px;
+                }
+            }
+
+            .site-m ul {
+                margin-top: 15px;
+            }
+             .site-m ul li{
+                 text-align:center;
+                text-align:left;`
+             }
+            .site-m ul li a:hover {
+                /*text-decoration:none;
+                color:$darkBlue;*/
+            }
+
+            .site-m ul li a {
+                line-height: 36px;
+                font-size: 18px;
+                color: black;
+            }
+
+            .dispatch {
+                margin-top: 25px;
+
+                span {
+                    font-size: 18px;
+                    color: black;
+                    padding-bottom:12px;
+                    display:block;
+                }
+
+                select, input, button {
+                    border: 1px solid #b3b3b3;
+                    border-radius: 5px;
+                    box-sizing:border-box;
+                    height: 40px;
+                    width: 100%;
+                    margin-bottom:7px;
+                    padding-right:7px;
+                    padding-left:7px;
+                }
+                option{
+                    padding:0;
+                }
+                button{
+                    background-color:$darkBlue;
+                    color:white;
+                }
+            }
+        }
+
+        .details {
+            @include light;
+            font-size: 14px;
+            text-align: center;
+            padding-top: 45px;
+            padding-bottom: 15px;
+            background-color: #f3f3f3;
+        }
+    }
+}
+
+.section-wrapper {
+    flex: 1 0 auto;
+}
+/*.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }*/
+
+@import "_media";

@@ -1,0 +1,17 @@
+﻿$darkBlue: #0c3c61;
+$blue: #2c6bad;
+$lightBlue: #4d83bc;
+$VlightBlue: #a7c7e8;
+$grey: #f4f4f4;
+$activegray:#cdcdcd; 
+
+@mixin regular{
+    font-family: 'Roboto-Regular';
+}
+
+@mixin thin{
+    font-family: 'Roboto-Thin';
+}
+@mixin light{
+     font-family: 'Roboto-Light';
+}
