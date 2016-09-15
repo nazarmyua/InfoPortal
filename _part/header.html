@@ -1,38 +1,49 @@
-﻿<div class="instrument container-fluid">
-    <div class="container">
-        <ul class="nav nav-pills nav-justified">
-            <li><a href="#" class="region"> Виберіть Ваш регіон</a></li>
-            <li>
-                <input class="search-input" type="text" placeholder="Пошук" />
-                <input type="button" class="search" />
-            </li>
-            <li>
-                <a class="online" href="#">онлайн сервіси</a>
-            </li>
-            <li>
-                <ul class="autorize">
-                    <li><a href="#">Реєстрація</a></li>
-                    <li><a href="#">Особистий кабінет</a></li>
+﻿<div class="instrument container-fluid ">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <ul class="nav nav-justified">
+                    <li><a href="#" class="region">
+                         <div>Виберіть Ваш регіон</div>
+                    </a></li>
+                    <li>
+                        <input class="search-input" type="text" placeholder="Пошук" />
+                        <input type="button" class="search" />
+                    </li>
+                    <li>
+                        <a class="online" href="#">
+                            <div>онлайн сервіси</div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="autorize-block">
+                            <ul class="autorize">
+                                <li><a href="#">Реєстрація</a></li>
+                                <li><a href="#">Особистий кабінет</a></li>
+                            </ul>
+                            <a class="log-in" href="#"></a>
+                        </div>
+                    </li>
+                    <li role="presentation" class="dropdown lang">
+                        
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="lang-active">RU</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">UKR</a></li>
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#">RU</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <a class="log-in" href="#"></a>
-            </li>
-            <li role="presentation" class="dropdown lang">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="lang-active">RU</span><span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">UKR</a></li>
-                    <li><a href="#">EN</a></li>
-                    <li><a href="#">RU</a></li>
-                </ul>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>
 <div class="info container-fluid">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 logo">
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 logo">
                 <div class="img-container">
                     <img src="../img/gerb.png" />
                 </div>
@@ -42,7 +53,7 @@
                     <span class="portal">портал україни</span>
                 </div>
             </div>
-            <div class="col-lg-2 info-data">
+            <div class="col-lg-2 col-md-2 info-data hidden-sm hidden-xs">
                 <span class="count">46</span>
                 <span>державних інвест проектів</span>
                 <span class="count">70</span>
@@ -50,10 +61,10 @@
                 <span class="count">146</span>
                 <span>приватних  інвест пропозицій</span>
             </div>
-            <div class="col-lg-1 in-region">
+            <div class="col-lg-1 col-md-2 in-region hidden-sm  hidden-xs">
                 <span>y</span>
             </div>
-            <div class="col-lg-2 info-data">
+            <div class="col-lg-2 col-md-2 info-data hidden-sm  hidden-xs">
                 <span class="count">24</span>
                 <span>областях України</span>
                 <span class="count">176</span>
@@ -61,7 +72,7 @@
                 <span class="count">490</span>
                 <span>районів України</span>
             </div>
-            <div class="col-lg-1 col-lg-offset-1 dop-info">
+            <div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-3 dop-info">
                 <div class="dropdown">
                     <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         <span class="glyphicon glyphicon-menu-hamburger"></span>
@@ -83,86 +94,96 @@
         </div>
     </div>
 </div>
-<div class="menu container-fluid">
+<div class="navbar navbar-default menu" role="navigation">
     <div class="container">
-        <ul class="nav nav-pills nav-justified main-menu">
-            <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    Про регіон
-                </a>
-                <ul class="dropdown-menu">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav nav-pills nav-justified navbar-nav main-menu">
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Про регіон
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Географічне розташування та кліматичні умови</a></li>
+                        <li><a href="#">Адміністративно-територіальний поділ</a></li>
+                        <li><a href="#">Природно-ресурсний потенціал</a> </li>
+                        <li><a href="#">Трудовий потенціал </a></li>
+                        <li><a href="#">Освітній та науковий потенціал</a> </li>
+                        <li><a href="#">Промисловість </a></li>
+                        <li><a href="#">Сільське господарство</a> </li>
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Бізнес-інфраструктура
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Місцева влада </a></li>
+                        <li><a href="#">Банківська система </a></li>
+                        <li><a href="#">Освітня система </a></li>
+                        <li><a href="#">Асоціації та громадські організації</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Наші переваги
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Сприятливий інвестиційний клімат</a></li>
+                        <li><a href="#">Вдала логістика. </a></li>
+                        <li><a href="#">Розвинена інфраструктура </a></li>
+                        <li><a href="#">Ресурсний потенціал </a></li>
+                        <li><a href="#">Регіональна підтримка </a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Інвестору на замітку
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Як започаткувати бізнес? </a></li>
+                        <li><a href="#">Перелік ЦНАПів </a></li>
+                        <li><a href="#">Податкова система </a></li>
+                        <li><a href="#">Індустріальні парки </a></li>
+                        <li><a href="#">Державно-приватне партнерство </a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Зовнішньоекономічна діяльність
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Зовнішня торгівля товарами </a></li>
+                        <li><a href="#">Зовнішня торгівля послугами</a></li>
 
-                    <li><a href="#">Географічне розташування та кліматичні умови</a></li>
-                    <li><a href="#">Адміністративно-територіальний поділ</a></li>
-                    <li><a href="#">Природно-ресурсний потенціал</a> </li>
-                    <li><a href="#">Трудовий потенціал </a></li>
-                    <li><a href="#">Освітній та науковий потенціал</a> </li>
-                    <li><a href="#">Промисловість </a></li>
-                    <li><a href="#">Сільське господарство</a> </li>
-                </ul>
-            </li>
-            <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    Бізнес-інфраструктура
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Місцева влада                      </a></li>
-                    <li><a href="#">Банківська система                 </a></li>
-                    <li><a href="#">Освітня система                    </a></li>
-                    <li><a href="#">Асоціації та громадські організації</a></li>
-                </ul>
-            </li>
-            <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    Наші переваги
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Сприятливий інвестиційний клімат</a></li>
-                    <li><a href="#">Вдала логістика.                 </a></li>
-                    <li><a href="#">Розвинена інфраструктура        </a></li>
-                    <li><a href="#">Ресурсний потенціал             </a></li>
-                    <li><a href="#">Регіональна підтримка           </a></li>
-                </ul>
-            </li>
-            <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    Інвестору на замітку
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Як започаткувати бізнес?      </a></li>
-                    <li><a href="#">Перелік ЦНАПів                </a></li>
-                    <li><a href="#">Податкова система             </a></li>
-                    <li><a href="#">Індустріальні парки           </a></li>
-                    <li><a href="#">Державно-приватне партнерство </a></li>
-                </ul>
-            </li>
-            <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    Зовнішньоекономічна діяльність
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Зовнішня торгівля товарами </a></li>
-                    <li><a href="#">Зовнішня торгівля послугами</a></li>
+                    </ul>
+                </li>
+                <li role="presentation">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Інноваційний розвиток
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Інноваційна діяльність </a></li>
+                        <li><a href="#">Інноваційно активні установи </a></li>
+                        <li><a href="#">Проекти та пропозиції. </a></li>
 
-                </ul>
-            </li>
-            <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    Інноваційний розвиток
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Інноваційна діяльність         </a></li>
-                    <li><a href="#">Інноваційно активні установи   </a></li>
-                    <li><a href="#">Проекти та пропозиції.          </a></li>
-
-                </ul>
-            </li>
-            <li>
-                <a href="#">Успішні проекти</a>
-            </li>
-            <li>
-                <a href="#">Контакти</a>
-            </li>
-        </ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Успішні проекти</a>
+                </li>
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
     </div>
 </div>
+
